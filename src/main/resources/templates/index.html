@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+	<title>>Inserisci Utente</title>
+</head>
+
+<body>
+	<form action="#" th:action="@{/web/salvaUtente}" method="get">
+		<h2>Aggiungi Utente</h2>
+		   <div>> 
+		         <span>Nome Utente:</span>
+		          <input name="nomeUtente" id="utente" type="text" placeholder="Inserisci Nome Utente" required>
+		          </div>
+		          <div>
+		          <span>>Cognome Utente:</span>	       
+		          <input name="cognomeUtente" id="cognome" type="text" placeholder="Inserisci Cognome Utente">
+		    </div>
+		     <div>
+		          <span>>Email:</span>	       
+		          <input name="emailUtente" id="email" type="email" placeholder="Inserisci Email Utente">
+		    </div>
+			      <input id="submitUser" type="submit" th:value="salva">
+	</form>
+
+</body>
+
+</html>
